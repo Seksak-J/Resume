@@ -18,3 +18,4 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+// background: radial-gradient(600px at 1375px 919px, rgba(29, 78, 216, 0.15), transparent 80%);
