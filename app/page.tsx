@@ -220,7 +220,11 @@ export default function Home() {
             <div className="grid grid-cols-4 gap-x-[16px]">
               <div className="col-span-1 text-slate-500 text-sm mt-[2px] w-[130px] h-[90px]">
                 <Image
-                  src="/images/image_default.png"
+                  src={
+                    window.location.origin
+                      ? "/images/image_default.png"
+                      : "https://seksak-j.github.io/Resume/images/image_default.png"
+                  }
                   alt=""
                   className="w-full h-full object-cover rounded-[6px]"
                   width={130}
@@ -242,7 +246,11 @@ export default function Home() {
             <div className="grid grid-cols-4 gap-x-[16px]">
               <div className="col-span-1 text-slate-500 text-sm mt-[2px] w-[130px] h-[90px]">
                 <Image
-                  src="/images/image_default.png"
+                  src={
+                    window.location.origin
+                      ? "/images/image_default.png"
+                      : "https://seksak-j.github.io/Resume/images/image_default.png"
+                  }
                   alt=""
                   className="w-full h-full object-cover rounded-[6px]"
                   width={130}
@@ -270,7 +278,11 @@ export default function Home() {
               <div className="grid grid-cols-4 gap-x-[16px]">
                 <div className="col-span-1 text-slate-500 text-sm mt-[2px] w-[130px] h-[90px]">
                   <Image
-                    src="/images/saansook.jpg"
+                    src={
+                      window.location.origin
+                        ? "/images/saansook.jpg"
+                        : "https://seksak-j.github.io/Resume/images/saansook.jpg"
+                    }
                     alt=""
                     className="w-full h-full object-cover rounded-[6px]"
                     width={130}
@@ -292,7 +304,11 @@ export default function Home() {
             <div className="grid grid-cols-4 gap-x-[16px]">
               <div className="col-span-1 text-slate-500 text-sm mt-[2px] w-[130px] h-[90px]">
                 <Image
-                  src="/images/image_default.png"
+                  src={
+                    window.location.origin
+                      ? "/images/image_default.png"
+                      : "https://seksak-j.github.io/Resume/images/image_default.png"
+                  }
                   alt=""
                   className="w-full h-full object-cover rounded-[6px]"
                   width={130}
@@ -315,7 +331,11 @@ export default function Home() {
             <div className="grid grid-cols-4 gap-x-[16px]">
               <div className="col-span-1 text-slate-500 text-sm mt-[2px] w-[130px] h-[90px]">
                 <Image
-                  src="/images/iot.jpg"
+                  src={
+                    window.location.origin
+                      ? "/images/iot.jpg"
+                      : "https://seksak-j.github.io/Resume/images/iot.jpg"
+                  }
                   alt=""
                   className="w-full h-full object-cover rounded-[6px]"
                   width={130}
@@ -333,7 +353,11 @@ export default function Home() {
             <div className="grid grid-cols-4 gap-x-[16px]">
               <div className="col-span-1 text-slate-500 text-sm mt-[2px] w-[130px] h-[90px]">
                 <Image
-                  src="https://seksak-j.github.io/Resume/images/image_default.png"
+                  src={
+                    window.location.origin
+                      ? "/images/image_default.png"
+                      : "https://seksak-j.github.io/Resume/images/image_default.png"
+                  }
                   alt=""
                   className="w-full h-full object-cover rounded-[6px]"
                   width={130}
