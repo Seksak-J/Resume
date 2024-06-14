@@ -4,16 +4,10 @@ import React, { useEffect, useState } from "react";
 const HoverSlideDown = () => {
   const [isHovered, setIsHovered] = useState(0);
 
-  useEffect(() => {
-    const divElement: any = document.getElementById("test")?.clientHeight;
-    console.log(divElement);
-    setIsHovered(divElement + 80);
-  }, []);
-
   return (
     <div className="group">
       <div
-        className={`bg-blue-500 text-white p-4 w-full h-20 hover:h-[${isHovered}px] transition-all duration-300 overflow-hidden`}
+        className={`bg-blue-500 text-white p-4 w-full h-20 hover:h-[200px] transition-all duration-300 overflow-hidden`}
       >
         don't hover
         <div id="test" className="hidden group-hover:block w-[500px]">
