@@ -14,6 +14,7 @@ import _ from "lodash";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
@@ -218,10 +219,12 @@ export default function Home() {
           <div className="mt-[96px] text-white rounded-[6px] p-[16px] hover:drop-shadow-lg cursor-pointer hover:bg-slate-800 hover:shadow-md w-full hover:text-teal-300">
             <div className="grid grid-cols-4 gap-x-[16px]">
               <div className="col-span-1 text-slate-500 text-sm mt-[2px] w-[130px] h-[90px]">
-                <img
+                <Image
                   src="/image_default.png"
                   alt=""
                   className="w-full h-full object-cover rounded-[6px]"
+                  width={130}
+                  height={90}
                 />
               </div>
               <div className="col-span-3">
@@ -238,10 +241,12 @@ export default function Home() {
           <div className="mt-[24px] text-white rounded-[6px] p-[16px] hover:drop-shadow-lg cursor-pointer hover:bg-slate-800 hover:shadow-md w-full hover:text-teal-300">
             <div className="grid grid-cols-4 gap-x-[16px]">
               <div className="col-span-1 text-slate-500 text-sm mt-[2px] w-[130px] h-[90px]">
-                <img
+                <Image
                   src="/image_default.png"
                   alt=""
                   className="w-full h-full object-cover rounded-[6px]"
+                  width={130}
+                  height={90}
                 />
               </div>
               <div className="col-span-3">
@@ -264,10 +269,12 @@ export default function Home() {
             <div className="mt-[24px]  text-white rounded-[6px] p-[16px] hover:drop-shadow-lg cursor-pointer hover:bg-slate-800 hover:shadow-md hover:text-teal-300">
               <div className="grid grid-cols-4 gap-x-[16px]">
                 <div className="col-span-1 text-slate-500 text-sm mt-[2px] w-[130px] h-[90px]">
-                  <img
+                  <Image
                     src="/saansook.jpg"
                     alt=""
                     className="w-full h-full object-cover rounded-[6px]"
+                    width={130}
+                    height={90}
                   />
                 </div>
                 <div className="col-span-3">
@@ -284,10 +291,12 @@ export default function Home() {
           <div className="mt-[24px] text-white rounded-[6px] p-[16px] hover:drop-shadow-lg cursor-pointer hover:bg-slate-800 hover:shadow-md w-full hover:text-teal-300">
             <div className="grid grid-cols-4 gap-x-[16px]">
               <div className="col-span-1 text-slate-500 text-sm mt-[2px] w-[130px] h-[90px]">
-                <img
+                <Image
                   src="/image_default.png"
                   alt=""
                   className="w-full h-full object-cover rounded-[6px]"
+                  width={130}
+                  height={90}
                 />
               </div>
               <div className="col-span-3">
@@ -310,6 +319,8 @@ export default function Home() {
                     src="/iot.jpg"
                     alt=""
                     className="w-full h-full object-cover rounded-[6px]"
+                    width={130}
+                    height={90}
                   />
                 </Zoom>
               </div>
@@ -323,10 +334,12 @@ export default function Home() {
           <div className="text-white rounded-[6px] p-[16px] hover:drop-shadow-lg cursor-pointer hover:bg-slate-800 hover:shadow-md w-full hover:text-teal-300 mt-[24px]">
             <div className="grid grid-cols-4 gap-x-[16px]">
               <div className="col-span-1 text-slate-500 text-sm mt-[2px] w-[130px] h-[90px]">
-                <img
+                <Image
                   src="/image_default.png"
                   alt=""
                   className="w-full h-full object-cover rounded-[6px]"
+                  width={130}
+                  height={90}
                 />
               </div>
               <div className="col-span-3 flex  flex-col">
