@@ -125,7 +125,7 @@ export default function Home() {
                     TailwindCss to beautifully style the web pages. Cypress is
                     used as a testing framework for conducting End-to-End
                     Testing. Utilize Pixel-Perfect principles to ensure the web
-                    pages are as accurate as possible to the designer's
+                    pages are as accurate as possible to the designer&apos;s
                     specifications. In the data visualization and document
                     management project, we utilized LongdoMap and also Research
                     getSteam into the project for features such as chat and
@@ -314,15 +314,13 @@ export default function Home() {
           <div className="text-white rounded-[6px] p-[16px] hover:drop-shadow-lg cursor-pointer hover:bg-slate-800 hover:shadow-md w-full hover:text-teal-300 mt-[96px]">
             <div className="grid grid-cols-4 gap-x-[16px]">
               <div className="col-span-1 text-slate-500 text-sm mt-[2px] w-[130px] h-[90px]">
-                <Zoom>
-                  <img
-                    src="/iot.jpg"
-                    alt=""
-                    className="w-full h-full object-cover rounded-[6px]"
-                    width={130}
-                    height={90}
-                  />
-                </Zoom>
+                <Image
+                  src="/iot.jpg"
+                  alt=""
+                  className="w-full h-full object-cover rounded-[6px]"
+                  width={130}
+                  height={90}
+                />
               </div>
               <div className="col-span-3 flex  flex-col">
                 <p className="text-slate-400">2019</p>
