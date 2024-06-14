@@ -1,29 +1,30 @@
-export default function about() {
+"use client";
+import React, { useEffect, useState } from "react";
+
+const HoverSlideDown = () => {
+  const [isHovered, setIsHovered] = useState(0);
+
+  useEffect(() => {
+    const divElement: any = document.getElementById("test")?.clientHeight;
+    console.log(divElement);
+    setIsHovered(divElement + 80);
+  }, []);
+
   return (
-    <div className="bg-slate-900">
-      <div className="flex h-screen bg-slate-900 mx-auto max-w-[1280px]">
-        <div className="w-1/2 bg-blue-500">tsetser</div>
-        <div className="w-1/2 bg-green-500 overflow-y-scroll">
-          <div className="h-96 bg-green-600 mt-4"></div>
-          <div className="h-96 bg-green-700 mt-4"></div>
-          <div className="h-96 bg-green-800 mt-4"></div>
-          <div className="h-96 bg-green-900 mt-4"></div>
+    <div className="group">
+      <div
+        className={`bg-blue-500 text-white p-4 w-full h-20 hover:h-[${isHovered}px] transition-all duration-300 overflow-hidden`}
+      >
+        don't hover
+        <div id="test" className="hidden group-hover:block w-[500px]">
+          Developed and collaborated with backend and designer
+          พัฒนาระบบยื่นคำขออนุญาตจัดการอาคารออนไลน์ โดยทำงานร่วมกับ backend,
+          designer และ project manager เป็น ที่เกี่ยวกับการกรอกข้อมูลเพื่อเก็บ
+          data ไว้
         </div>
       </div>
     </div>
-    // <div className="flex h-screen">
-    //   <div className="w-1/2 bg-blue-500 p-4">
-    //     <div className="text-3xl text-white">Static Content</div>
-    //     <p className="text-white mt-4">This content does not scroll.</p>
-    //   </div>
-    //   <div className="w-1/2 bg-green-500 p-4 overflow-y-scroll">
-    //     <h1 className="text-white text-3xl">Scrollable Content</h1>
-    //     <p className="text-white mt-4">This content is scrollable.</p>
-    //     <div className="h-96 bg-green-600 mt-4"></div>
-    //     <div className="h-96 bg-green-700 mt-4"></div>
-    //     <div className="h-96 bg-green-800 mt-4"></div>
-    //     <div className="h-96 bg-green-900 mt-4"></div>
-    //   </div>
-    // </div>
   );
-}
+};
+
+export default HoverSlideDown;
